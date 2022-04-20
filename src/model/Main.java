@@ -54,7 +54,18 @@ public class Main {
 						System.out.println(ANSI_GREEN+"+------------------------------+"+ANSI_RESET);
 						break;
 					case 4:
-						
+						System.out.println(ANSI_GREEN+"+------------------------------+"+ANSI_RESET);
+						System.out.print(ANSI_GREEN+" Carrera de Leopardos: "+ANSI_RESET);
+							Leopardos l1 = new Leopardos("Mishi1");
+							Leopardos l2 = new Leopardos("Mishi2");
+							Leopardos l3 = new Leopardos("Mishi3");
+							Leopardos l4 = new Leopardos("Mishi4");
+							l1.start();
+							l2.start();
+							l3.start();
+							l4.start();
+							Thread.sleep(500);
+						System.out.println(ANSI_GREEN+"+------------------------------+"+ANSI_RESET);
 						break;
 					default:
 						System.out.println("Opción Incorrecta :c");
